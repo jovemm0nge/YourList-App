@@ -5,19 +5,19 @@ import { Navbar } from './src/components/navbar';
 
 export default function App() {
   return (
+    <View>
+    <Navbar/>
     <View style={styles.container}>
-      <Navbar/>
       <Home/>
       <StatusBar style="auto" />
+    </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    marginTop:30,
-    marginLeft:25,
-    marginRight:25,
+    marginTop:75,
     backgroundColor: '#fff',
     justifyContent: 'center',
   },

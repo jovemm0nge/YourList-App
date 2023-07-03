@@ -15,7 +15,8 @@ export const Navbar = () => {
   
 
    return (
-    <View style={styles.container}>
+    <View style={styles.nav}> 
+    <View style={styles.content}>
 
         <Image style={styles.logoImg} source={Logo}/>
         <Text style={styles.title}>Your List</Text>
@@ -24,18 +25,31 @@ export const Navbar = () => {
  
        
     </View>
-   
+    </View>
     );
 };
 
 
 const styles = StyleSheet.create({
-    container:{
+    content:{
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
         textAlign: 'center',
+        padding:10,
+        paddingRight:20
+    },
+    nav:{
+        top: 0,
+        left: 0,
+        right: 0,
+        position: 'absolute',
+        width: '100%',
+        backgroundColor: '#FFFFFF',
+        elevation: 3,
+        zIndex: 1,
+        paddingTop:10
     },
     logoImg:{
      width:50,

@@ -1,20 +1,37 @@
 export const Tasks = [
     {
      id:"1",
-     description:"Task A",
+     title:"Task A",
+     description:"This task have name Task A and you need make every day",
      category:"Estudy",
-     dificult:"Hard"
+     difficulty:"Hard"
     },
     {
     id:"2",
-    description:"Task B",
+    title:"Task B",
+    description:"This task have name Task B and you need make every day",
     category:"Work",
-    dificult:"Easy"
+    difficulty:"Easy"
    },
    {
     id:"3",
-    description:"Task C",
+    title:"Task C",
+    description:"This task have name Task C and you need make every day",
     category:"Training",
-    dificult:"Medium"
+    difficulty:"Medium"
+   },
+   {
+    id:"4",
+    title:"Task D",
+    description:"This task have name Task D and you need make every day",
+    category:"Training",
+    difficulty:"Medium"
+   },
+   {
+    id:"5",
+    title:"Task E",
+    description:"This task have name Task E and you need make every day",
+    category:"Training",
+    difficulty:"Medium"
    }
 ];
