@@ -11,13 +11,12 @@ interface IListCard {
 export function ListCard({ title, category, description, difficulty }: IListCard) {
     return (
       <TouchableOpacity>
-      <View style={styles.card}>
-  
-      <Text style={styles.title}>{title}</Text>
-      <Text style={styles.categoria} >{category}</Text>
-      <Text style={styles.description} >{description}</Text>
-      <Text  style={styles.difficulty}>difficulty Level: {difficulty} </Text>
-    </View>
+        <View style={styles.card}>
+          <Text style={styles.title}>{title}</Text>
+          <Text style={styles.categoria} >{category}</Text>
+          <Text style={styles.description} >{description}</Text>
+          <Text  style={styles.difficulty}>difficulty Level: {difficulty} </Text>
+        </View>
       </TouchableOpacity>
     );
 }

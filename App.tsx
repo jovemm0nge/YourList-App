@@ -1,24 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+
 import { StyleSheet, Text, View } from 'react-native';
+
+import { StatusBar } from 'expo-status-bar';
 import { Home } from './src/screens/Home';
 import { Navbar } from './src/components/navbar';
+import { Routes } from './src/routes';
+
+import { useNavigation } from '@react-navigation/native';
+
+
 
 export default function App() {
+  
+  
   return (
-    <View>
-    <Navbar/>
-    <View style={styles.container}>
-      <Home/>
-      <StatusBar style="auto" />
-    </View>
-    </View>
+   
+    <Routes/>
+    
   );
+
+
 }
 
-const styles = StyleSheet.create({
-  container: {
-    marginTop:75,
-    backgroundColor: '#fff',
-    justifyContent: 'center',
-  },
-});
+

@@ -1,6 +1,7 @@
 import {StyleSheet, Text, View, Image, Button} from "react-native";
 import { GenericButton } from "../../components/buttons/index";
 import { useState } from "react";
+import React from 'react';
 
 export const Navbar = () => {
     
@@ -10,6 +11,7 @@ export const Navbar = () => {
     const [Login, setLogin] = useState(false);
 
     const GetLogin = () => {
+    
       setLogin(true);
     };
   
@@ -17,13 +19,13 @@ export const Navbar = () => {
    return (
     <View style={styles.nav}> 
     <View style={styles.content}>
-
+    
         <Image style={styles.logoImg} source={Logo}/>
         <Text style={styles.title}>Your List</Text>
        
         {Login ?  <Image style={styles.icon} source={UserIcon}/> : <GenericButton text="Login" onPress={GetLogin} />}
  
-       
+ 
     </View>
     </View>
     );
@@ -37,8 +39,8 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         textAlign: 'center',
-        padding:10,
-        paddingRight:20
+        padding:5,
+        paddingRight:20,
     },
     nav:{
         top: 0,
@@ -49,7 +51,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFFFFF',
         elevation: 3,
         zIndex: 1,
-        paddingTop:10
+        paddingTop:20
     },
     logoImg:{
      width:50,
